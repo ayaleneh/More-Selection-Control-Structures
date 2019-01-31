@@ -1,0 +1,68 @@
+1. Process customer record
+START
+INPUT
+
+Customer_name//we use String data_type
+Purchase_amount//we use double or float data_type
+Tax_code//we use intger data_type
+OUTPUT
+
+
+Customer_name
+Sales tax
+Purchase amount
+Total amount due
+
+
+Processing steps
+
+
+//we can use either if else or switch to process the problem
+switch(Tax_code){
+case 0:   //when the input for tax_code is 0
+sales = 0.0;
+ PRINT Customer_name   //name of customer
+ PRINT sales   //sales_tax
+ PRINT "total Due: "=(sales * purchase_amount)// total Due
+break;
+case 1://when the input for tax_code is 1
+sales = 3.0/100.0;
+ PRINT Customer_name   //name of customer
+ PRINT sales   //sales_tax
+ PRINT "total Due: "=(sales * purchase_amount)// total Due
+break;
+
+case 2://when the input for tax_code is 2
+sales = 5.0/100.0;
+ PRINT Customer_name   //name of customer
+ PRINT sales   //sales_tax
+ PRINT "total Due: "=(sales * purchase_amount)// total Due
+break;
+
+case 3://when the input for tax_code is 3
+sales = 7.0/100.0;
+ PRINT Customer_name   //name of customer
+ PRINT sales   //sales_tax
+ PRINT "total Due: "=(sales * purchase_amount)// total Due
+break;
+}
+END
+2.Calculate employee's pay
+START
+INPUT
+emploee number
+payrate
+hour_worked
+OUTPUT
+employee weekly pay
+Processing steps
+Prompt the User to enter the value for the above three input
+IF hour_worked>60 OR payrate>25.00
+PRINT error message dispayed 
+ELSE
+   IF hour_worked>35
+       weekly_pay_Calculation=hour_worked*pay
+       PRINT weekly_pay_Caculation
+   ELSE
+       weekly_pay_Calculation=hour_worked*hour_worked*hour_worked/2*pay
+       PRINT weekly_pay_Caculation
